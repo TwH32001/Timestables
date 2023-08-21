@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="two.min.js" defer></script>
+    <script src="app.js" defer></script>
+    <style>
+        body {
+           background-color: rgb(58, 204, 229);
+        }
+     </style>
+</head>
+<body>
+    <div class="game">
+        <div class="left">
+            
+            <div class="topLeft">
+                <div id="face"> </div>
+                 <div id="smile" ></div>
+                <div class="chat">
+                    <p id="message">Hi! I’m Joe from the pest control team!</p>
+                </div>
+            </div>
+            <!--<div class="clipboard"></div>-->
+            <div class="scoreboard"> 
+                <div class="scoreitems">
+                    <p class="sb_item">Time Left:</p>
+                    <p class="sb_item">Pests Found:</p>
+                    <p class="sb_item">Mistakes:</p>
+                    <p class="sb_item">Money Earned:</p>
+                    <p class="sb_item">Hints Left:</p>
+                </div>
+                <div class ="scorevalues">
+                    <p id="time" class="sb_number">0:00</p>
+                    <p id="currentQ" class="sb_number">0</p>
+                    <p id="mistakes" class="sb_number">0</p>
+                    <p id="score" class="sb_number">0</p>
+                    <p id="hints" class="sb_number">3</p>
+                </div>
+            </div>
+            <div class="leftbuttons">
+                <button class="menubuttons" id="mb9">End Game</button>
+                <button class="menubuttons" id="mb10">Hint</button>
+            </div>
+                
+        </div>
+        <div class="middle"></div>
+        <div class ="right">
+            <div class="topRight">Find room: <span id="num"></span></div>
+            <div class="top-row">
+                <div class="square"></div>
+                <div class="square"><p>1</p></div>
+                <div class="square"><p>2</p></div>
+                <div class="square"><p>3</p></div>
+                <div class="square"><p>4</p></div>
+                <div class="square"><p>5</p></div>
+                <div class="square"><p>6</p></div>
+                <div class="square"><p>7</p></div>
+                <div class="square"><p>8</p></div>
+                <div class="square"><p>9</p></div>
+                <div class="square"><p>10</p></div>
+                <div class="square"><p>11</p></div>
+                <div class="square"><p>12</p></div>      
+            </div>
+            <div class="bottom-row">
+                <div class="side-row">
+                    <div class="square"><p>1</p></div>
+                    <div class="square"><p>2</p></div>
+                    <div class="square"><p>3</p></div>
+                    <div class="square"><p>4</p></div>
+                    <div class="square"><p>5</p></div>
+                    <div class="square"><p>6</p></div>
+                    <div class="square"><p>7</p></div>
+                    <div class="square"><p>8</p></div>
+                    <div class="square"><p>9</p></div>
+                    <div class="square"><p>10</p></div>
+                    <div class="square"><p>11</p></div>
+                    <div class="square"><p>12</p></div>
+                </div>
+                <div class="main">
+                    <div class="square"><button id="1">?</button></div>
+                    <div class="square"><button id="2">?</button></div>
+                    <div class="square"><button id="2">?</button></div>
+                    <div class="square"><button id="3">?</button></div>
+                    <div class="square"><button id="4">?</button></div>
+                    <div class="square"><button id="5">?</button></div>
+                    <div class="square"><button id="6">?</button></div>
+                    <div class="square"><button id="7">?</button></div>
+                    <div class="square"><button id="8">?</button></div>
+                    <div class="square"><button id="9">?</button></div>
+                    <div class="square"><button id="10">?</button></div>
+                    <div class="square"><button id="11">?</button></div>
+                    <div class="square"><button id="12">?</button></div>
+                    <div class="square"><button id="13">?</button></div>
+                    <div class="square"><button id="14">?</button></div>
+                    <div class="square"><button id="15">?</button></div>
+                    <div class="square"><button id="16">?</button></div>
+                    <div class="square"><button id="17">?</button></div>
+                    <div class="square"><button id="18">?</button></div>
+                    <div class="square"><button id="19">?</button></div>
+                    <div class="square"><button id="20">?</button></div>
+                    <div class="square"><button id="21">?</button></div>
+                    <div class="square"><button id="22">?</button></div>
+                    <div class="square"><button id="23">?</button></div>
+                    <div class="square"><button id="24">?</button></div>
+                    <div class="square"><button id="25">?</button></div>
+                    <div class="square"><button id="26">?</button></div>
+                    <div class="square"><button id="27">?</button></div>
+                    <div class="square"><button id="28">?</button></div>
+                    <div class="square"><button id="29">?</button></div>
+                    <div class="square"><button id="30">?</button></div>
+                    <div class="square"><button id="31">?</button></div>
+                    <div class="square"><button id="32">?</button></div>
+                    <div class="square"><button id="33">?</button></div>
+                    <div class="square"><button id="34">?</button></div>
+                    <div class="square"><button id="35">?</button></div>
+                    <div class="square"><button id="36">?</button></div>
+                    <div class="square"><button id="37">?</button></div>
+                    <div class="square"><button id="38">?</button></div>
+                    <div class="square"><button id="39">?</button></div>
+                    <div class="square"><button id="40">?</button></div>
+                    <div class="square"><button id="41">?</button></div>
+                    <div class="square"><button id="42">?</button></div>
+                    <div class="square"><button id="43">?</button></div>
+                    <div class="square"><button id="44">?</button></div>
+                    <div class="square"><button id="45">?</button></div>
+                    <div class="square"><button id="46">?</button></div>
+                    <div class="square"><button id="47">?</button></div>
+                    <div class="square"><button id="48">?</button></div>
+                    <div class="square"><button id="49">?</button></div>
+                    <div class="square"><button id="50">?</button></div>
+                    <div class="square"><button id="51">?</button></div>
+                    <div class="square"><button id="52">?</button></div>
+                    <div class="square"><button id="53">?</button></div>
+                    <div class="square"><button id="54">?</button></div>
+                    <div class="square"><button id="55">?</button></div>
+                    <div class="square"><button id="56">?</button></div>
+                    <div class="square"><button id="57">?</button></div>
+                    <div class="square"><button id="58">?</button></div>
+                    <div class="square"><button id="59">?</button></div>
+                    <div class="square"><button id="60">?</button></div>
+                    <div class="square"><button id="61">?</button></div>
+                    <div class="square"><button id="62">?</button></div>
+                    <div class="square"><button id="63">?</button></div>
+                    <div class="square"><button id="64">?</button></div>
+                    <div class="square"><button id="65">?</button></div>
+                    <div class="square"><button id="66">?</button></div>
+                    <div class="square"><button id="67">?</button></div>
+                    <div class="square"><button id="68">?</button></div>
+                    <div class="square"><button id="69">?</button></div>
+                    <div class="square"><button id="70">?</button></div>
+                    <div class="square"><button id="71">?</button></div>
+                    <div class="square"><button id="72">?</button></div>
+                    <div class="square"><button id="73">?</button></div>
+                    <div class="square"><button id="74">?</button></div>
+                    <div class="square"><button id="75">?</button></div>
+                    <div class="square"><button id="76">?</button></div>
+                    <div class="square"><button id="77">?</button></div>
+                    <div class="square"><button id="78">?</button></div>
+                    <div class="square"><button id="79">?</button></div>
+                    <div class="square"><button id="80">?</button></div>
+                    <div class="square"><button id="81">?</button></div>
+                    <div class="square"><button id="82">?</button></div>
+                    <div class="square"><button id="83">?</button></div>
+                    <div class="square"><button id="84">?</button></div>
+                    <div class="square"><button id="85">?</button></div>
+                    <div class="square"><button id="86">?</button></div>
+                    <div class="square"><button id="87">?</button></div>
+                    <div class="square"><button id="88">?</button></div>
+                    <div class="square"><button id="89">?</button></div>
+                    <div class="square"><button id="90">?</button></div>
+                    <div class="square"><button id="91">?</button></div>
+                    <div class="square"><button id="92">?</button></div>
+                    <div class="square"><button id="93">?</button></div>
+                    <div class="square"><button id="94">?</button></div>
+                    <div class="square"><button id="95">?</button></div>
+                    <div class="square"><button id="96">?</button></div>
+                    <div class="square"><button id="97">?</button></div>
+                    <div class="square"><button id="98">?</button></div>
+                    <div class="square"><button id="99">?</button></div>
+                    <div class="square"><button id="100">?</button></div>
+                    <div class="square"><button id="101">?</button></div>
+                    <div class="square"><button id="102">?</button></div>
+                    <div class="square"><button id="103">?</button></div>
+                    <div class="square"><button id="104">?</button></div>
+                    <div class="square"><button id="105">?</button></div>
+                    <div class="square"><button id="106">?</button></div>
+                    <div class="square"><button id="107">?</button></div>
+                    <div class="square"><button id="108">?</button></div>
+                    <div class="square"><button id="109">?</button></div>
+                    <div class="square"><button id="110">?</button></div>
+                    <div class="square"><button id="111">?</button></div>
+                    <div class="square"><button id="112">?</button></div>
+                    <div class="square"><button id="113">?</button></div>
+                    <div class="square"><button id="114">?</button></div>
+                    <div class="square"><button id="115">?</button></div>
+                    <div class="square"><button id="116">?</button></div>
+                    <div class="square"><button id="117">?</button></div>
+                    <div class="square"><button id="118">?</button></div>
+                    <div class="square"><button id="119">?</button></div>
+                    <div class="square"><button id="120">?</button></div>
+                    <div class="square"><button id="121">?</button></div>
+                    <div class="square"><button id="122">?</button></div>
+                    <div class="square"><button id="123">?</button></div>
+                    <div class="square"><button id="124">?</button></div>
+                    <div class="square"><button id="125">?</button></div>
+                    <div class="square"><button id="126">?</button></div>
+                    <div class="square"><button id="127">?</button></div>
+                    <div class="square"><button id="128">?</button></div>
+                    <div class="square"><button id="129">?</button></div>
+                    <div class="square"><button id="130">?</button></div>
+                    <div class="square"><button id="131">?</button></div>
+                    <div class="square"><button id="132">?</button></div>
+                    <div class="square"><button id="133">?</button></div>
+                    <div class="square"><button id="134">?</button></div>
+                    <div class="square"><button id="135">?</button></div>
+                    <div class="square"><button id="136">?</button></div>
+                    <div class="square"><button id="137">?</button></div>
+                    <div class="square"><button id="138">?</button></div>
+                    <div class="square"><button id="139">?</button></div>
+                    <div class="square"><button id="140">?</button></div>
+                    <div class="square"><button id="141">?</button></div>
+                    <div class="square"><button id="142">?</button></div>
+                    <div class="square"><button id="143">?</button></div>
+                    <div class="square"><button id="144">?</button></div>
+                </div>
+            </div>
+        </div>
+          
+    </div>
+    <div id="endmenu" class="endmenu">Play Again?
+        <p class="welcome"> Current High Score: <span id="highscore">0</span></p>
+        <p class="welcome">You should work on: <span id="advice">0</span></p>
+        <p class="welcome">How long do you want to play for?</p>
+        <div class="buttoncontainer">
+            <button class="menubuttons" id="mb4">5 mins</button>
+            <button class="menubuttons" id="mb5">10 mins</button>
+            <button class="menubuttons" id="mb6">Unlimited</button>
+        </div>
+        <div class="buttoncontainer">
+            <button class="menubuttons" id="mb8">Start</button>
+        </div>
+    </div>
+    <div id="startmenu" class="startmenu">Hotel Pest Controller
+        <p class="welcome"> We've got pests everywhere - please help me find them!</p>
+        <p class="welcome">I'll give you the room numbers, you can use your times tables to find them.</p>
+        <p class="welcome">How long do yo want to play for?</p>
+        <div class="buttoncontainer">
+            <button class="menubuttons" id="mb1">5 mins</button>
+            <button class="menubuttons" id="mb2">10 mins</button>
+            <button class="menubuttons" id="mb3">Unlimited</button>
+            </div>
+        <div class="buttoncontainer">
+            <button class="menubuttons" id="mb7">Start</button>
+        </div>
+    </div>
+    
+    
+
+
+
+</body>
+</html>

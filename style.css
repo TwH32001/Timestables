@@ -1,0 +1,304 @@
+/* 
+
+Section1: This is the container for the game. There are 3 columns, Left, Middle and Right*/
+.game {
+    height: 100%;
+    width: 980px;
+    display:grid;
+    grid-template: 1fr/ 1fr 0.1fr 2fr;
+    margin: 1%;
+    padding: 1%;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .visibility{
+        visibility: hidden;
+    }
+    
+    /*This code is used to apply hover effect styling to all buttons*/
+    button:hover {
+        transform: scale(0.8);
+    }
+
+/* 
+Section 2: This code styles the Left column of the game*/
+.left {
+    display:grid;
+    align-items: center;
+    justify-content:center ;
+    height: 50%;
+    width: auto;
+    grid-template: 2fr 1.5fr 2fr/ 1fr;
+    font-size: 2.6vmin;
+    margin-left: 0px;
+}
+
+.topLeft {
+    display:grid;
+    grid-template: 1fr/ 1.5fr 1fr;
+    max-height:75%;
+    width:auto;
+    padding: 1px;
+    margin: 1px;
+}
+
+/*Using a min-width avoids the changing mesage from re-sizing the left column whenever the message is updated.*/
+.chat {
+    display:grid;
+    grid-template: 1fr/ 1fr;
+    justify-content: center;
+    align-items: center ;
+    height: auto;
+    min-width:100%;
+    padding: 5px;
+    margin: 5px;
+}
+
+#message {
+    height: auto;
+    width:100%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+}
+
+#smile{
+    position: absolute;
+    padding:2px;
+    height: 240px;
+    width:240px;
+    padding: 1px;
+    margin: 1px;   
+}
+
+.scoreboard {
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    height:75%;
+    width:auto;
+    grid-template: 1fr / 2fr 1fr;
+    padding: 5%;
+    margin: 5%;
+    border: 5px brown solid;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.sb_item {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 20px;
+    width:auto;
+    padding: 5px;
+    margin: 5px; 
+}
+
+.sb_number {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 20px;
+    width:auto;
+    border: 1px brown solid;
+    border-radius: 3px;
+    padding: 5px;
+    margin: 5px;
+    color: red;
+    font-weight: bold;
+}
+
+.leftbuttons {
+    display:flex;
+    flex-direction: row;
+    max-height:100%;
+    width:auto;
+    justify-content:center;
+    align-items:center;
+    padding: 1%;
+    margin: 1%;
+}
+
+/* 
+Section3: This code styles the Middle column of the game.*/
+.middle {
+    display:grid;
+    height: 50%;
+    width:10%;
+    grid-template-columns: 1fr;
+}
+
+/* 
+Section 4: This code styles the Right column of the game.*/
+.right {
+    display:grid;
+    grid-template: 0.5fr 1fr 12fr/ 1fr;
+    height: 50%;
+    width: auto;
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+    font-size:2.1vh;
+}
+
+.topRight {
+    display: grid;
+    grid-template:1fr /1fr 1fr;
+    align-items: center;
+    justify-content:center ;
+    height:auto;
+    width: auto;
+}
+
+#num{
+    display: grid;
+    min-height: 65%;
+    width: 10%;
+    justify-content: center;
+    align-content: center;
+    color: red;
+    border: 3px brown solid;
+    border-radius: 10px;
+    background-color: white;
+    font-weight: bold;
+    padding: 2%;
+    font-size:3vmin;
+}
+
+.top-row {
+    display:grid;
+    grid-template: 1fr/ repeat(13,1fr);
+    height:auto;
+    width:auto;
+    background-color: bisque;
+    border-left: 5px brown solid;
+    border-top: 5px brown solid;
+    border-right: 5px brown solid;
+}
+
+.bottom-row {
+    display: grid;
+    align-items: top;
+    grid-template: 1fr/ 1fr 12fr;
+    height:auto;
+    width:auto;  
+}
+
+.side-row {
+    display:grid;
+    grid-template: repeat(12,1fr)/1fr;
+    height:auto;
+    width:auto;
+    background-color: bisque;
+    border-left: 5px brown solid;
+    border-bottom: 5px brown solid;
+}
+
+.main {
+    display:grid;
+    grid-template:repeat(12,1fr)/repeat(12,1fr);
+    height:auto;
+    width:auto;
+    border-right: 5px brown solid;
+    border-bottom: 5px brown solid;
+    background-color: white;
+}
+
+.square { 
+    height: auto;
+    width: auto;
+    background-color: none;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    font-weight: bold;
+    color:black;
+}
+
+/* This code styles the game grid buttons*/
+.square button{
+    border-radius: 15px;
+    color: white;
+    min-height: 25px;
+    min-width: 25px;
+    text-align: center;
+    background-color:red;
+    font-weight: bold;
+    margin: 1%;
+    padding: 1% 5%;
+    font-size: 2.5vmin;
+}
+
+
+/*
+Section 5: This code styles the start and endmenus*/
+.startmenu, .endmenu {
+    position:absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 35%;
+    width: 35%;
+    left: 30%;
+    top: 20%;
+    border: 5px brown solid;
+    border-radius: 10%;
+    padding: 4%;
+    margin: 2%;
+    gap: 1%;
+    background-color: white;
+    font-size: 4vmin;
+    color:red;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*This is the text between the header and the buttons*/
+.welcome{
+    font-size: large;
+    color:black;
+    font-size:2.5vmin;
+}
+
+.buttoncontainer {
+    display: flex;
+    flex-direction: row;
+    height:auto;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+}
+
+/* This code styles the menu buttons*/
+.menubuttons {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 50%;
+    min-width: 30%;
+    gap:5px;
+    border-radius: 10px;
+    /*background-color:rgb(77, 77, 198);*/
+    background-color: bisque;
+    border: 2px red solid;
+    font: size 60px;
+    font-weight: bold;
+    color:black;
+    margin: 1%;
+    padding: 1% 5%;
+    font-size: 2.5vmin;
+}
+
+This code modifies the inherited properties of the End Game and Hint buttons to make them a little smaller
+#mb9,#mb10 {
+    width: 40%;
+    min-height:15%;
+}
+
+
+
+
+
